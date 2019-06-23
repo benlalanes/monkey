@@ -21,9 +21,9 @@ const (
 	ASTERISK TokenType = "*"
 	SLASH    TokenType = "/"
 
-	LT TokenType = "<"
-	GT TokenType = ">"
-	EQ TokenType = "=="
+	LT     TokenType = "<"
+	GT     TokenType = ">"
+	EQ     TokenType = "=="
 	NOT_EQ TokenType = "!="
 
 	// Delimiters
@@ -53,12 +53,12 @@ type Token struct {
 }
 
 var keywords = map[string]TokenType{
-	"fn":  FUNCTION,
-	"let": LET,
-	"true": TRUE,
-	"false": FALSE,
-	"if": IF,
-	"else": ELSE,
+	"fn":     FUNCTION,
+	"let":    LET,
+	"true":   TRUE,
+	"false":  FALSE,
+	"if":     IF,
+	"else":   ELSE,
 	"return": RETURN,
 }
 
