@@ -78,11 +78,11 @@ func (i *Identifier) TokenLiteral() string { return i.Token.Literal }
 func (i *Identifier) String() string { return i.Value }
 
 type ReturnStatement struct {
-	Token token.Token
+	Token       token.Token
 	ReturnValue Expression
 }
 
-func (rs *ReturnStatement) statementNode() {}
+func (rs *ReturnStatement) statementNode()       {}
 func (rs *ReturnStatement) TokenLiteral() string { return rs.Token.Literal }
 
 func (rs *ReturnStatement) String() string {
@@ -106,11 +106,10 @@ func (es *ExpressionStatement) String() string {
 	return ""
 }
 
-
 type ExpressionStatement struct {
-	Token token.Token // the first token of the expression
+	Token      token.Token // the first token of the expression
 	Expression Expression
 }
 
-func (es *ExpressionStatement) statementNode() {}
+func (es *ExpressionStatement) statementNode()       {}
 func (es *ExpressionStatement) TokenLiteral() string { return es.Token.Literal }
